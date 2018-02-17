@@ -13,6 +13,7 @@ const AppRoutes = ({ setLogin }) => (
   <div>
     <Route exact path="/" render={() => <HomePage />}/>
     <Route exact path="/login" render={() => <Login setLogin={setLogin}/>} />
+    <Route exact path="/register" render={() => <h1>Coming Soon</h1>} />
     <Route exact path="/listings/:id"  
       render={(routeProps) => (<ListingDetail {...routeProps} />) }/>
       <Route exact path="/categories/:id"  
